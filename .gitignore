@@ -1,0 +1,10 @@
+schemas/gschemas.compiled
+locale/
+*.mo
+*.zip
+*.shell-extension.zip
+.DS_Store
+*~
+*.swp
+.vscode/
+.idea/
