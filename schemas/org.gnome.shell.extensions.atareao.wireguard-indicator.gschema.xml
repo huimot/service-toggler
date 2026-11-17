@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="wireguard-indicator@atareao.es">
+    <schema path="/org/gnome/shell/extensions/atareao/wireguard-indicator/" id="org.gnome.shell.extensions.atareao.wireguard-indicator">
+        <key name="services" type="as" >
+            <default>["service1|wg-quick@wg0.service", "service2|wg-quick@wg1.service"]</default>
+            <summary>Services name</summary>
+            <description>Set the name of the systemd services</description>
+        </key>
+        <key name="nmcli" type="b">
+            <default>false</default>
+            <summary>Use nmcli</summary>
+            <description>Use nmcli to manage WireGuard connections</description>
+        </key>
+        <key name="sudo" type="b">
+            <default>false</default>
+            <summary>Use sudo</summary>
+            <description>Enable use sudo with service</description>
+        </key>
+        <key name="checktime" type="i" >
+            <default>5</default>
+            <summary>Check time</summary>
+            <description>Set the check time to test the WireGuard status</description>
+        </key>
+        <key name="darktheme" type="b">
+            <default>false</default>
+            <summary>Dark theme</summary>
+            <description>Enable dark theme otherwise light theme</description>
+        </key>
+    </schema>
+</schemalist>
